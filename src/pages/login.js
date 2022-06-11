@@ -18,9 +18,15 @@ const Login = () => {
           <div className="form-container">
             <h2 className='form-title'>Admin Login</h2>
             <form onSubmit={(e) => e.preventDefault()}>
-              <input type="email" className='email' placeholder='Email' />
-              <input type="password" className='password' placeholder='Password' />
-              <Link to='/home'><button type='submit' className='btn'>sign&nbsp;in</button></Link>
+              <div>
+                <label htmlFor='email'>Email&nbsp;address</label>
+                <input type="email" className='email' id='email' name='email' placeholder='name@gmail.com' />
+              </div>
+              <div>
+                <label htmlFor='password'>Password</label>
+                <input type="password" className='password' id='password' name='password' placeholder='Password'/>
+              </div>
+              <Link to='/home'><button type='submit' className='btn btn-submit'>sign&nbsp;in</button></Link>
             </form>
           </div>
         </div>

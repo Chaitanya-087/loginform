@@ -14,5 +14,5 @@
 
 .btn-login{
     text-transform: capitalize;
-    transition: 200ms;
+    width: 100px;
 }
