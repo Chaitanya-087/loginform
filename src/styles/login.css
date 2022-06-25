@@ -78,11 +78,21 @@ label{
         height: 80vh;
         top: 50%;
         left:50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%) translateY(-40px);
+        opacity: 0;
+        animation: roll 250ms ease-in-out 1 forwards;
         border-radius: 5px;
         overflow: hidden;
         flex-direction: row;
     }
+    @keyframes roll {
+        to{
+            transform: translate(-50%,-50%) translateY(0);
+            opacity: 1;
+        }
+    }
+
+    
     .img-container{
         width: 45%;
         height: 100%;
